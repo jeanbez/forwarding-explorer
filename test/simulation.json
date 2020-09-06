@@ -1,0 +1,14 @@
+{
+	"forwarders": "1",
+	"handlers": "1",
+	"dispatchers": "16",
+	"path": "/gpfs/scratch/bsc03/bsc03353/forge.out",
+	"number_of_files": "individual",
+	"spatiality": "contiguous",
+	"total_size": "274877906944",
+	"request_size": "32768",
+	"validation": "0",
+	"operations": "write",
+	"direct_io": "1",
+	"stone_wall": "60"
+}
