@@ -1,5 +1,5 @@
 """
-FORGE - I/O Forwarding Emulator.
+FORGE - I/O Forwarding Explorer.
 
 Generate the hostfile to run in MareNostrum IV.
 

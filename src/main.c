@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
     MPI_Status status;
 
     if (argc != 3) {
-        printf("\nFORGE - I/O Forwarding Emulator\n");
+        printf("\nFORGE - I/O Forwarding Explorer\n");
         printf("Usage: ./forge <configuration.json> <output path>\n");
 
         return 0;
@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
     char *directory = argv[2];
 
     char simulation_log_file[255] = "";
-    sprintf(simulation_log_file, "%s/emulation.log", directory);
+    sprintf(simulation_log_file, "%s/exploration.log", directory);
 
     // Open log file
     FILE *log_file;

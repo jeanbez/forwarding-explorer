@@ -64,7 +64,7 @@ html_theme_options = {
 html_logo = 'forge.png'
 
 breathe_projects = {
-	'forge': '/home/jbez/Documents/Projects/doctorate/forwarding-simulator/build/docs/doxygen/xml'
+	'forge': '../build/docs/doxygen/xml'
 }
 
 breathe_default_project = 'forge'
