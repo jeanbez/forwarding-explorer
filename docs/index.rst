@@ -22,7 +22,7 @@ FORGE needs the AGIOS scheduling library for the I/O nodes to have request sched
 
 .. code-block:: bash
 
-   git clone https://bitbucket.org/francielizanon/agios
+   git clone https://gitlab.com/jeanbez/forwarding-explorer-agios agios
    cd agios
    make library
    make library_install
@@ -40,8 +40,8 @@ Building the forwarding explorer is straightforward:
 
 .. code-block:: bash
 
-   git clone https://gitlab.com/jeanbez/forwarding-explorer
-   cd forwarding-explorer
+   git clone https://gitlab.com/jeanbez/forwarding-explorer forge
+   cd forge
    mkdir build
    cd build
    cmake ..
@@ -65,7 +65,7 @@ You need to copy some files to /tmp on each node AGIOS will run. These files are
 
 .. code-block:: bash
 
-   cd forwarding-explorer
+   cd forge
    cp agios/* /tmp/
 
 FORGE Configuration

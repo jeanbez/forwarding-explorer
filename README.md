@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 FORGE needs the AGIOS scheduling library for the I/O nodes to have I/O request scheduling capabilities. To install AGIOS:
 
 ```
-git clone https://bitbucket.org/francielizanon/agios
+git clone https://gitlab.com/jeanbez/forwarding-explorer-agios agios
 cd agios
 make library
 make library_install
@@ -30,8 +30,8 @@ apt install libgsl-dev
 Building FORGE is straightforward:
 
 ```
-git clone https://gitlab.com/jeanbez/forwarding-explorer
-cd forwarding-explorer
+git clone https://gitlab.com/jeanbez/forwarding-explorer forge
+cd forge
 mkdir build
 cd build
 cmake ..
@@ -53,7 +53,7 @@ You first need to configure the AGIOS scheduling library and then the scenario (
 You need to copy some files to `/tmp` on each node AGIOS will run. These files are required as they contain configuration parameters and access times. More information about these files, please refer to the AGIOS repository and paper.
 
 ```
-cd forwarding-explorer
+cd forge
 cp agios/* /tmp/
 ```
 
