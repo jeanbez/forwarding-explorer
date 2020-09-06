@@ -104,7 +104,7 @@ int main(int argc, char *argv[]) {
     MPI_Comm_rank(MPI_COMM_WORLD, &world_rank); 
 
     if (world_rank == 0) {
-        log_info("I/O Forwarding Emulation [START]");
+        log_info("I/O Forwarding Exploration [START]");
     }
 
     FILE *json_file;
@@ -167,7 +167,7 @@ int main(int argc, char *argv[]) {
         MPI_Abort(MPI_COMM_WORLD, ERROR_INVALID_JSON);
     }
 
-    // Simulation configuration
+    // Exploration configuration
     char simulation_path[255] = "";
 
     char *simulation_base_path = "";
@@ -651,7 +651,7 @@ int main(int argc, char *argv[]) {
 
             assert(strftime(timestamp, sizeof(timestamp), "%F | %T", tm));
 
-            sprintf(map, "----------------------------\n I/O Forwarding Simulation\n---------------------------\n");
+            sprintf(map, "----------------------------\n I/O Forwarding Exploration\n---------------------------\n");
             MPI_File_write(fh, &map, strlen(map), MPI_CHAR, &s);
 
             sprintf(map, " | %s | \n---------------------------\n forwarders: %d\n clients: %d\n layout: %d\n spatiality: %d\n odirect: %d\n stonewall: %d\n request: %ld KB\n total: %ld MB\n---------------------------\n\n", timestamp, world_size - client_size, client_size, simulation_files, simulation_spatiality, simulation_direct_io, simulation_stone_wall, simulation_request_size / 1024, simulation_total_size / 1024 / 1024);
@@ -1155,7 +1155,7 @@ int main(int argc, char *argv[]) {
     free(simulation_spatiality_name);
 
     if (world_rank == 0) {
-        log_info("I/O Forwarding Emulation [COMPLETE]");
+        log_info("I/O Forwarding Exploration [COMPLETE]");
     }
 
     // Close log file

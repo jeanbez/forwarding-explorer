@@ -138,7 +138,7 @@ Finally, the execution time of the write and read phases is detailed in the `*.t
 
 ```
 ---------------------------
- I/O Forwarding Simulation
+ I/O Forwarding Exploration
 ---------------------------
  | 2019-10-23 | 16:45:31 | 
 ---------------------------
